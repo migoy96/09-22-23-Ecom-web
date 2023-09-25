@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style copy.css">
+    <link rel="shortcut icon" href="images/airborne.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>AirBorne Soles</title>
+</head>
+<body>
+  
+  <!-- navbar -->
+
+  <section id="header">
+    <a href="index.html"><img src="images/logo2.png" class="logo" alt=""></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html" class="active">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li id="remove_cart" class="shopping"><a href=""><i class="fa-solid fa-cart-shopping"></i><span id="quantity"></span></a></li>
+        <a href="#" id="close"><i class="fa-solid fa-xmark"></i></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href=""><i class="fa-solid fa-cart-shopping"></i><span id="quantity2"></span></a>
+      <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+  </section>
+
+      
+      <div class="row container-fluid">
+        <div class="col-sm col-md col-lg-8" id="itemList">
+            <!-- item list -->
+        </div>
+        <div class="col-sm col-md col-lg-3 m-3 border_style">
+            <h1 class="text-center">Cart List:</h1> <hr>
+            <div class="row">
+                <div id="delete_btn" class="text-start col-1 col-xl-1 col-lg-1">
+                <!-- delete button -->
+                </div>
+                <div id="cartList" class="col-11 col-xl-11 col-lg-11" >
+                    <!-- item list -->
+                </div>     
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-6 text-start">
+                <button class="btn btn-secondary"><a href="checkout.html" style="text-decoration: none; color: white;">Proceed To Checkout</a></button>
+              </div>
+              <div id="totalPrice" class="col-6 text-end">
+                  <!-- total price -->
+              </div>
+            </div>
+            
+        </div>
+      </div>
+
+      <!-- footer -->
+
+      <section id="newsletter" class="section-p1" style="margin-top: 50px;">
+        <div class="newstext">
+          <h4>Sign Up For Newsletters</h4>
+          <p>Get E-mail updates about out latest kicks and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+          <input type="text" placeholder="Your email address">
+          <button>Sign Up</button>
+        </div>
+      </section>
+    
+      <footer style="padding-top: 30px;">
+        <div class="col">
+          <img class="logo_footer" src="images/logo.png" alt="">
+          <h4>Contact</h4>
+          <p><strong>Address: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p><strong>Phone: </strong>(02)1234-5689 / +639123456789</p>
+          <div class="socmed">
+            <h4>Follow Us:</h4>
+            <div class="socicon">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <h4>About</h4>
+          <a href="about.html">About Us</a>
+          <a href="product.html">All Products</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Contact Us</a>
+        </div>
+    
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="">View Cart</a>
+          <a href="">My Wishlist</a>
+          <a href="">Track My Order</a>
+          <a href="">Help</a>
+        </div>
+    
+        <div class="col">
+          <h4>Payment Options</h4>
+          <div class="payment">
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-paypal"></i>
+            <i class="fa-brands fa-google-pay"></i>
+          </div>
+        </div>
+      </footer>
+    
+      <div class="copyright">
+        <p>&copy; 2023 - AirBorne Soles by Miguel Carlos Blancaflor</p>
+      </div>
+    
+      
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
