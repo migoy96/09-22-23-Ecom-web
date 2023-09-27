@@ -15,7 +15,7 @@
   <!-- navbar -->
 
   <section id="header">
-    <a href="index.html"><img src="images/logo2.png" class="logo" alt=""></a>
+    <a href="index.html"><img src="images/logo.png" class="logo" style="height: 50px; width: 180px;" alt=""></a>
 
     <div>
       <ul id="navbar">
@@ -40,17 +40,39 @@
         <div class="col-sm col-md col-lg-3 m-3 border_style">
             <h1 class="text-center">Cart List:</h1> <hr>
             <div class="row">
-                <div id="delete_btn" class="text-start col-1 col-xl-1 col-lg-1">
-                <!-- delete button -->
-                </div>
                 <div id="cartList" class="col-11 col-xl-11 col-lg-11" >
                     <!-- item list -->
-                </div>     
+                </div>  
+                <div id="delete_btn" class="text-start col-1 col-xl-1 col-lg-1">
+                  <!-- delete button -->
+                  </div>   
             </div>
             <hr>
             <div class="row">
               <div class="col-6 text-start">
-                <button class="btn btn-secondary"><a href="checkout.html" style="text-decoration: none; color: white;">Proceed To Checkout</a></button>
+                <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Proceed to Checkout
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Proceed to Checkout</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Are you sure, you want to place order?
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Continue Shopping</button>
+                          <button type="button" id="alertNoitem" class="btn btn-secondary" onclick="alertItem()">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
               <div id="totalPrice" class="col-6 text-end">
                   <!-- total price -->

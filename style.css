@@ -51,7 +51,7 @@ p {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: rgb(53, 53, 53);
+    background-image: linear-gradient(rgb(73, 73, 73), rgb(31, 31, 31)) ;
     box-shadow: 0 5px 15px rgba(151, 151, 151, 0.6);
     z-index: 999;
     position: sticky;
